@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/style.css">
+  <title>Calculator</title>
+</head>
+<body >
+  <div class=" container calc" >
+    <div class="row "style="display: flex;align-items: center ;justify-content: center;">
+      
+    <div class="calculator card  bg-dark col-lg-4 col-sm-12" >
+
+      <input type="text" id="textInput" class="calculator-screen z-depth-1 " value=""  />
+    
+      <div class="calculator-keys ">
+    
+        <button type="button" class="operator btn btn-info" value="+" onclick="Calculator.OperatorClick('+')">+</button>
+        <button type="button" class="operator btn btn-info" value="-" onclick="Calculator.OperatorClick('-')">-</button>
+        <button type="button" class="operator btn btn-info" value="*" onclick="Calculator.OperatorClick('*')">&times;</button>
+        <button type="button" class="operator btn btn-info" value="/" onclick="Calculator.OperatorClick('/')">&divide;</button>
+    
+        <button type="button" value="7" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">7</button>
+        <button type="button" value="8" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">8</button>
+        <button type="button" value="9" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">9</button>
+    
+    
+        <button type="button" value="4" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">4</button>
+        <button type="button" value="5" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">5</button>
+        <button type="button" value="6" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">6</button>
+    
+    
+        <button type="button" value="1" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">1</button>
+        <button type="button" value="2" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">2</button>
+        <button type="button" value="3" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">3</button>
+    
+    
+        <button type="button" value="0" class="btn btn-light waves-effect" onclick="Calculator.WriteText(this)">0</button>
+        <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
+        <button type="button" class="all-clear function btn btn-danger btn-sm " value="all-clear" onclick="Calculator.ClearData()">AC</button>
+    
+        <button type="button" class="equal-sign operator btn btn-default btn-outline-primary" value="=" onclick="Calculator.Calculation()">=</button>
+    
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12 m-auto  " >
+      <ul class="list-group">
+      <li class="list-group-item"  id="value"style="font-size: 25px;  font-weight: 800; width: 150px; border:none ; margin:50px"></li>
+    </ul>
+</div>
+</div>
+  
+
+
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/calc.js"></script>
+</body>
+</html>
